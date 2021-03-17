@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Barlow Regular";
+  src: local("Barlow Regular"), local("Barlow-Regular"), url("assets/fonts/Barlow-Regular.woff") format("woff"), url("assets/fonts/Barlow-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barlow Bold";
+  src: local("Barlow Bold"), local("Barlow-Bold"), url("assets/fonts/Barlow-Bold.woff") format("woff"), url("assets/fonts/Barlow-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFPro Regular";
+  src: local("Barlow Regular"), local("Barlow-Regular"), url("assets/fonts/Barlow-Regular.woff") format("woff"), url("assets/fonts/Barlow-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFPro Bold";
+  src: local("SFPro Bold"), local("SFPro-Bold"), url("assets/fonts/SFPro-Bold.woff") format("woff"), url("assets/fonts/SFPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -31,23 +59,28 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size: 5rem;
   color: #2F3035;
+  font-family: "SFPro Bold";
 }
 
 h2 {
   font-size: 3.6rem;
   color: #fff;
+  font-family: "Barlow Regular";
 }
 
 h3 {
   font-size: 2.5rem;
+  font-family: "Barlow Regular";
 }
 
 h4 {
   font-size: 1.6rem;
+  font-family: "Barlow Regular";
 }
 
 p {
   font-size: 2rem;
+  font-family: "SFPro Regular";
 }
 
 .container {
