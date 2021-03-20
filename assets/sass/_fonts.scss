@@ -1,3 +1,4 @@
+//  Fonts that uses Headers
 @font-face {
   font-family: "Barlow Regular" sans-serif;
   src: local("Barlow Regular"), local("Barlow-Regular"), url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
@@ -13,6 +14,7 @@
   font-weight: 700;
   font-display: swap;
 }
+// Fonts that u/ses regular text
 
 @font-face {
   font-family: "SFProDisplay Regular" sans-serif;
@@ -36,62 +38,4 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #2F3035;
-  font-family: "SFProDisplay Regular", sans-serif;
-  font-size: 1.25rem;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #2F3035;
-}
-
-ul, li {
-  list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-size: 3.125 rem;
-  color: #2F3035;
-  font-family: "SFProDisplay Bold", sans-serif, sans-serif;
-}
-
-h2 {
-  font-size: 2,25rem;
-  color: #fff;
-}
-
-h3 {
-  font-size: 1,875rem;
-}
-
-h4 {
-  font-size: 1.6rem;
-}
-
-p {
-  font-size: 2rem;
-}
-
-.container {
-  min-width: 1171px;
 }
