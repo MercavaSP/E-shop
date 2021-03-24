@@ -1,15 +1,15 @@
 //  Fonts that uses Headers
 @font-face {
-  font-family: "Barlow Regular" sans-serif;
-  src: local("Barlow Regular"), local("Barlow-Regular"), url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-family: "Barlow Regular", sans-serif;
+  src: url("/assets/fonts/Barlow-Regular.woff2") format("woff2"), url("/assets/fonts/Barlow-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Barlow Bold" sans-serif;
-  src: local("Barlow Bold"), local("Barlow-Bold"), url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
+  font-family: "Barlow Bold", sans-serif;
+  src: local("Barlow Bold"), local("Barlow-Bold"), url("/assets/fonts/Barlow-Bold.woff2") format("woff2"), url("/assets/fonts/Barlow-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -17,24 +17,24 @@
 // Fonts that u/ses regular text
 
 @font-face {
-  font-family: "SFProDisplay Regular" sans-serif;
-  src: local("SFPro Regular"), local("SFPro-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-family: "SFPro Regular", sans-serif;
+  src: local("SFPro Regular"), local("SFPro-Regular"), url("/assets/fonts/SFProDisplay-Regular.woff2") format("woff2"), url("/assets/fonts/SFProDisplay-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SFProDisplay SemiBold" sans-serif;
-  src: local("SFProDisplay Regular"), local("SFProDisplay-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-family: "SFPro SemiBold", sans-serif;
+  src: local("SFProDisplay Regular"), local("SFProDisplay-Regular"), url("/assets/fonts/Barlow-Regular.woff") format("woff2"), url("/assets/fonts/SFProDisplay-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SFProDisplay Bold" sans-serif;
-  src: local("SFProDisplay Bold"), local("SFProDisplay-Bold"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-family: "SFPro Bold", sans-serif;
+  src: local("SFProDisplay Bold"), local("SFProDisplay-Bold"), url("/assets/fonts/SFProDisplay-Bold.woff2") format("woff2"), url("/assets/fonts/SFProDisplay-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;

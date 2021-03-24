@@ -1,38 +1,38 @@
 @font-face {
-  font-family: "Barlow Regular" sans-serif;
-  src: local("Barlow Regular"), local("Barlow-Regular"), url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-family: "Barlow Regular", sans-serif;
+  src: url("/assets/fonts/Barlow-Regular.woff2") format("woff2"), url("/assets/fonts/Barlow-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Barlow Bold" sans-serif;
-  src: local("Barlow Bold"), local("Barlow-Bold"), url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
+  font-family: "Barlow Bold", sans-serif;
+  src: local("Barlow Bold"), local("Barlow-Bold"), url("/assets/fonts/Barlow-Bold.woff2") format("woff2"), url("/assets/fonts/Barlow-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SFProDisplay Regular" sans-serif;
-  src: local("SFPro Regular"), local("SFPro-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-family: "SFPro Regular", sans-serif;
+  src: local("SFPro Regular"), local("SFPro-Regular"), url("/assets/fonts/SFProDisplay-Regular.woff2") format("woff2"), url("/assets/fonts/SFProDisplay-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SFProDisplay SemiBold" sans-serif;
-  src: local("SFProDisplay Regular"), local("SFProDisplay-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-family: "SFPro SemiBold", sans-serif;
+  src: local("SFProDisplay Regular"), local("SFProDisplay-Regular"), url("/assets/fonts/Barlow-Regular.woff") format("woff2"), url("/assets/fonts/SFProDisplay-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SFProDisplay Bold" sans-serif;
-  src: local("SFProDisplay Bold"), local("SFProDisplay-Bold"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-family: "SFPro Bold", sans-serif;
+  src: local("SFProDisplay Bold"), local("SFProDisplay-Bold"), url("/assets/fonts/SFProDisplay-Bold.woff2") format("woff2"), url("/assets/fonts/SFProDisplay-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -44,11 +44,11 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   color: #2F3035;
-  font-family: "SFProDisplay Regular", sans-serif;
+  font-family: "SFPro regular", sans-serif;
   font-size: 1.25rem;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 img {
@@ -61,37 +61,156 @@ a {
 }
 
 ul, li {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
-  padding: 0;
 }
 
 h1 {
-  font-size: 3.125 rem;
-  color: #2F3035;
-  font-family: "SFProDisplay Bold", sans-serif, sans-serif;
+  font-size: 3.125rem;
 }
 
 h2 {
-  font-size: 2,25rem;
-  color: #fff;
-}
-
-h3 {
   font-size: 1,875rem;
 }
 
-h4 {
-  font-size: 1.6rem;
-}
-
-p {
-  font-size: 2rem;
+h3 {
+  font-size: 1,4375rem;
 }
 
 .container {
-  min-width: 1171px;
+  max-width: 1200px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.navbar__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 6em;
+  font-family: "SFPro regular", sans-serif;
+  font-weight: 700;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list-item-link:hover {
+  color: #1C62CD;
+}
+
+.menu__list-item + .menu__list-item {
+  padding-left: 2.5em;
+}
+
+.info__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info__panel-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 5em;
+}
+
+.info__panel-item {
+  min-width: 1.2em;
+  min-height: 1.3em;
+}
+
+.info__panel-item + .info__panel-item {
+  margin-left: 0.5em;
+}
+
+.info__panel-street {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info__panel-street .street-icon {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart__num {
+  position: absolute;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 1.5em;
+  width: 1.7em;
+  height: 1.7em;
+  color: #fff;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  background-color: #1C62CD;
+  text-align: center;
+  bottom: 0;
+  right: -3px;
+}
+
+.menu__bottom-list {
+  background-color: #F0F0F4;
+  min-height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.item-link {
+  padding-bottom: 0.755em;
+}
+
+.item-link:hover {
+  border-bottom: 3px solid #1C62CD;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #1C62CD;
 }

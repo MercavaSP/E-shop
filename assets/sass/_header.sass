@@ -1,1 +1,84 @@
+// ============================== //
+// ===== Upper navbar menu ====== //
+// ============================== //
 
+.navbar
+    &__top
+        &-inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+            min-height: 6em
+            font-family: "SFPro regular", sans-serif
+            font-weight: 700
+.menu
+    &__list
+        display: flex
+        &-item
+            &-link:hover
+                color: $cta-color
+        &-item + &-item
+            padding-left: 2.5em
+.info
+    &__panel
+        display: flex
+        justify-content: space-between
+        padding-right: 0.5em
+        align-items: center
+        &-list
+            display: flex
+            justify-content: space-between
+            margin-left: 5em
+        &-item
+            min-width: 1.2em
+            min-height: 1.3em
+        &-item + &-item
+            margin-left: 0.5em
+        &-street
+            display: flex
+            align-items: center
+            .street-icon
+                align-self: flex-start
+                height: 1.2em
+                width: 1.2em
+.cart
+    position: relative
+    &__num
+        position: absolute
+        font-weight: 500
+        font-size: 0.7rem
+        line-height: 1.5em
+        width: 1.7em
+        height: 1.7em
+        color: #fff
+        border-radius: 50%
+        border: 1.5px solid $cat-text-color
+        background-color: $cta-color
+        text-align: center
+        bottom: 0
+        right: -3px
+
+// ============================== //
+// ===== Upper navbar menu ====== //
+// ============================== //
+
+.menu
+    &__bottom
+        &-list
+            background-color: $bg-color
+            min-height: 53px
+            display: flex
+            align-items: center
+            width: 100%
+            display: flex
+            justify-content: space-evenly
+            flex-wrap: wrap
+            margin: 0 auto
+
+.item
+    &-link
+        padding-bottom: 0.755em
+        &:hover
+            border-bottom: 3px solid $cta-color
+            transition: .2s
+            color: $cta-color

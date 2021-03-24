@@ -17,55 +17,95 @@
     <nav class="navbar">
 		<div class="navbar__top">
 			<div class="container">
-				<ul class="menu__list">
-					<li class="menu__list--item">
-						<a class="menu__list--item-link" href="#">
-						Магазины
-						</a>
-					</li>
-					<li class="navbar__top-item">
-						<a class="menu__list--item-link" href="#">
-						Акции
-						</a>
-					</li>
-					<li class="nav__top-item">
-						<a class="menu__list--item-link" href="#">
-						Доставка и оплата
-						</a>
-					</li>
-				</ul>
-				<!-- End of menu -->
-				<a class="logo" href="#" >
-					<img class="logo__img" src="./assets/images/logo.svg" alt="Drive Moto Logo">
-				</a>
-				
-				<div class="info__panel">
-					<p class="info__panel-street">
-						Москва, ул. Науки 25
-					</p>
-					<ul class="info__panel-list">
-						<li class="info__panel-item">
-							<a class="heart" href="#"></a>
-						</li>
-						<li class="info__panel-item">
-							<a class="person" href="#"></a>
-						</li>
-						<li class="info__panel-item">
-							<a class="cart" href="#"></a>
-						</li>
-					</ul>
-				</div>
-			</div>
+				<div class="navbar__top-inner">
+					<div class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__list-item-link" href="#">
+								Магазины
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-item-link" href="#">
+								Акции
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-item-link" href="#">
+								Доставка и оплата
+								</a>
+							</li>
+						</ul>
+					</div><!-- End of menu -->
+					
+					<a class="logo" href="#" >
+						<img class="logo__img" src="./assets/images/logo.svg" alt="Drive Moto Logo">
+					</a>
+					
+					<div class="info__panel">
+						<div class="info__panel-street">
+							<div class="street-icon">
+								<img src="/assets/images/point.svg" alt="point icon">
+							</div>
+							<p class="street-text">Москва, ул. Науки 25</p>
+						</div>
+						<ul class="info__panel-list">
+							<li class="info__panel-item panel-item-1">
+								<a class="item__link heart" href="#">
+									<img src="/assets/images/heart.svg" alt="">
+								</a>
+							</li>
+							<li	class="info__panel-item panel-item-2">
+								<a class="item__link person" href="#">
+									<img src="/assets/images/person.svg" alt="">
+								</a>
+							</li>
+							<li class="info__panel-item panel-item-3">
+								<a class="item__link cart" href="#">
+									<img src="/assets/images/cart.svg" alt="">
+									<p class="cart__num cart__num-on ">1</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- header__top-inner -->
+			</div> <!-- end of container -->
 		</div> <!-- End of Nav top -->
 		
 		<div class="navbar__bottom">
 			<div class="container">
-
+				<div class="menu menu__bottom">
+					<ul class="menu__bottom-list">
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Квадроциклы</a>
+						</li>
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Катера</a>
+						</li>
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Гидроциклы</a>
+						</li>
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Лодки</a>
+						</li>
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Вездеходы</a>
+						</li>
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Снегоходы</a>
+						</li>
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Двигатели</a>
+						</li>
+						<li class="menu__bottom-item">
+							<a class="item-link" href="#">Запчасти</a>
+						</li>
+					</ul>
+				</div> <!-- end of menu__list-->
 			</div>
-
 		</div><!-- End of Nav bottom -->
-		
-    </nav>
+    
+	</nav>
 
   </header>
 
