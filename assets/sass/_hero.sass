@@ -1,0 +1,27 @@
+// variables
+
+.price-sale
+    font-family: "Barlow Bold", sans-serif
+    font-weight: 700
+    font-size: 1.685rem
+    position: relative
+    color: $cta-color
+    &::after
+        content: ""
+        position: absolute
+        background-image: url("/assets/images/price-icon.svg")
+        bottom: 0
+        right: 0
+        background-color: $cta-color
+
+.price
+    font-family: "Barlow Bold", sans-serif
+    font-weight: 700
+    font-size: 1.875rem
+
+.hero-block
+    display: flex
+    justify-content: space-between
+    &__slider
+        max-width: 870px
+    &__sale

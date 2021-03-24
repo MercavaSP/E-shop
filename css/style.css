@@ -214,3 +214,39 @@ h3 {
   transition: .2s;
   color: #1C62CD;
 }
+
+.price-sale {
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  font-size: 1.685rem;
+  position: relative;
+  color: #1C62CD;
+}
+
+.price-sale::after {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/images/price-icon.svg");
+  bottom: 0;
+  right: 0;
+  background-color: #1C62CD;
+}
+
+.price {
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-block__slider {
+  max-width: 870px;
+}
