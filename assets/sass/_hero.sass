@@ -25,3 +25,44 @@
     &__slider
         max-width: 870px
     &__sale
+
+.hero__btn
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background-color: transparent
+    border: none
+    margin: 0
+    padding: 0
+    z-index: 5
+    cursor: pointer
+    outline: none
+
+.hero__btn
+    &-prev
+        left: 20px
+    &-next
+        right: 20px
+
+.slick
+    &-dots
+        position: absolute
+        bottom: 40px
+        left: 0
+        right: 0
+        text-align: center
+        li
+            display: inline-block
+            padding: 0 5px
+        button
+            padding: 0
+            margin: 0
+            font-size: 0
+            height: 11px
+            width: 11px
+            border: 1px solid #fff
+            border-radius: 50%
+            background-color: transparent
+    &-active
+        button
+            background-color: #fff
