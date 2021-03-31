@@ -1,30 +1,13 @@
-// variables
-
-.price-sale
-    font-family: "Barlow Bold", sans-serif
-    font-weight: 700
-    font-size: 1.685rem
-    position: relative
-    color: $cta-color
-    &::after
-        content: ""
-        position: absolute
-        background-image: url("/assets/images/price-icon.svg")
-        bottom: 0
-        right: 0
-        background-color: $cta-color
-
-.price
-    font-family: "Barlow Bold", sans-serif
-    font-weight: 700
-    font-size: 1.875rem
-
-.hero-block
-    display: flex
-    justify-content: space-between
-    &__slider
-        max-width: 870px
-    &__sale
+.hero
+    margin: 3em 0
+    &-block
+        display: flex
+        justify-content: space-between
+        &__slider
+            max-width: 75%
+        &__sale
+            max-width: 23%
+            text-align: center
 
 .hero__btn
     position: absolute
@@ -37,8 +20,6 @@
     z-index: 5
     cursor: pointer
     outline: none
-
-.hero__btn
     &-prev
         left: 20px
     &-next
@@ -66,3 +47,100 @@
     &-active
         button
             background-color: #fff
+
+.cta-lable
+    background-color: $cta-color
+    color: #fff
+    padding: 8px 20px
+    font-size: 0.75rem
+    line-height: 15px
+    letter-spacing: 0.1em
+
+.sale__item
+    border: 1px solid #CDCDCD
+    border-radius: 3px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &--info
+
+        text-transform: uppercase
+        font-family: "SFPro Bold", sans-serif
+        text-transform: uppercase
+        font-weight: 700
+
+    &--top
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &--price
+        text-align: right
+        &-new
+            margin-right: 0.2em
+            position: relative
+            &::after
+                content: ''
+                background-image: url('../images/price-icon.svg')
+                display: inline-block
+                right: 0
+                top: 2px
+                width: 16px
+                height: 18px
+                margin-left: 6px
+        &-old
+            margin-right: 0.2em
+            margin-top: 0.5em
+            padding: 2px 3px 3px 5px
+            display: inline-block
+            background-image: url('../images/line.svg')
+            background-repeat: no-repeat
+
+            &::after
+                content: ''
+                background-image: url('../images/price-icon-old.svg')
+                display: inline-block
+                width: 8px
+                height: 10px
+                margin-left: 0.5em
+    &--image
+
+    &--title
+        font-family: "SFPro Bold", sans-serif
+        font-weight: 700
+        line-height: 22px
+        font-size: 1.125rem
+        max-width: 20ch
+        align-self: center
+        // padding-bottom: 1em
+
+    &--footer
+        align-items: flex-end
+        padding: 1em 2em
+        background-color: $bg-color
+        &-text
+            font-family: "SFPro Regular", sans-serif
+            font-weight: 400
+            line-height: 21px
+            font-size: 1.125rem
+            margin-bottom: 2px
+        &-date
+            color: $cta-color
+            font-family: "Barlow Bold", sans-serif
+            font-weight: 700
+            font-size: 1.125rem
+            line-height: 22px
+
+.price
+    font-family: "Barlow Bold", sans-serif
+    font-weight: 700
+    font-size: 1.875rem
+    line-height: 32px
+    &-sale
+        color: $cta-color
+        font-size: 1.687rem
+    &-old
+        font-family: "Barlow Bold", sans-serif
+        font-weight: 400
+        font-size: 0.875rem
+        color: #C4C4C4
+        line-height: 14px
