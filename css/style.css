@@ -341,7 +341,7 @@ h3 {
 
 .sale__item--price-new::after {
   content: '';
-  background-image: url("../images/price-icon.svg");
+  background-image: url("../assets/images/price-icon.svg");
   display: inline-block;
   right: 0;
   top: 2px;
@@ -355,13 +355,13 @@ h3 {
   margin-top: 0.5em;
   padding: 2px 3px 3px 5px;
   display: inline-block;
-  background-image: url("../images/line.svg");
+  background-image: url("../assets/images/line.svg");
   background-repeat: no-repeat;
 }
 
 .sale__item--price-old::after {
   content: '';
-  background-image: url("../images/price-icon-old.svg");
+  background-image: url("../assets/images/price-icon-old.svg");
   display: inline-block;
   width: 8px;
   height: 10px;
