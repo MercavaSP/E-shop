@@ -112,8 +112,8 @@
 	</header>
 
 	<main>
-
-		<section class="hero">
+		<!-- Slider Section With asside link -->
+		<section class="hero page-section">
 			<div class="container">
 				<div class="hero-block">
 					<div class="hero-block__slider">
@@ -161,6 +161,43 @@
 
 			</div>
 		</section>
+
+		<!-- Search section -->                                                 
+
+		<section class="search page-section">
+			 <div class="container">
+				<div class="search__inner">
+					<div class="search__tabs">
+						<a href="#tab-1" class="search__tabs-item search__tabs-item--active">Поиск по номеру</a>
+						<a href="#tab-2" class="search__tabs-item ">Поиск по марке</a>
+						<a href="#tab-3" class="search__tabs-item">Поиск по названию товара</a>
+					</div>
+				</div>
+				<div class="search__content">
+					<div id="tab-1" class="search__content-item search__content-item--active">
+						<form class="search__content-form">
+							<input class="search__content-input" type="text" placeholder="Искать по номеру">
+							<button class="search__content-btn btn-search">Искать</button>
+						</form>
+					</div>
+					<div id="tab-2" class="search__content-item">
+						<form class="search__content-form">
+							<input class="search__content-input" type="text" placeholder="Искать по марке">
+							<button class="search__content-btn btn-search" type="submit">Искать</button>
+						</form>
+					</div>
+					<div id="tab-3" class="search__content-item">
+						<form class="search__content-form">
+							<input class="search__content-input" type="text" placeholder="Искать по названию товара">
+							<button class="search__content-btn btn-search">Искать</button>
+						</form>
+					</div>
+				</div>
+
+			 </div>
+			 <!-- /.container -->
+		</section>
+		<!-- /.search -->
 
 	</main>
 

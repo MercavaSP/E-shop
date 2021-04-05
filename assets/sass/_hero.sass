@@ -1,5 +1,4 @@
 .hero
-    margin: 3em 0
     &-block
         display: flex
         justify-content: space-between
@@ -55,6 +54,7 @@
     font-size: 0.75rem
     line-height: 15px
     letter-spacing: 0.1em
+    border-radius: 2px 0 0 0
 
 .sale__item
     border: 1px solid #CDCDCD
@@ -81,12 +81,13 @@
             &::after
                 content: ''
                 background-image: url('../assets/images/price-icon.svg')
+                background-repeat: no-repeat
                 display: inline-block
                 right: 0
                 top: 2px
                 width: 16px
-                height: 18px
-                margin-left: 6px
+                height: 19px
+                margin-left: 0.35em
         &-old
             margin-right: 0.2em
             margin-top: 0.5em
@@ -98,12 +99,15 @@
             &::after
                 content: ''
                 background-image: url('../assets/images/price-icon-old.svg')
+                background-repeat: no-repeat
                 display: inline-block
                 width: 8px
                 height: 10px
                 margin-left: 0.5em
     &--image
-
+        max-width: 200px
+        max-height: 200px
+        align-self: center
     &--title
         font-family: "SFPro Bold", sans-serif
         font-weight: 700
@@ -111,8 +115,6 @@
         font-size: 1.125rem
         max-width: 20ch
         align-self: center
-        // padding-bottom: 1em
-
     &--footer
         align-items: flex-end
         padding: 1em 2em
