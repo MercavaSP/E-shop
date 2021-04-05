@@ -1,0 +1,40 @@
+.categories
+    &__inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        width: 370px
+        max-height: 130px
+        display: flex
+        padding: 20px 20px 16px
+        justify-content: space-between
+
+        &:hover
+            color: $cta-color
+            transition: all 0.3s
+        &-info
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &-title
+
+        &-text
+            font-family: "SFPro Regular",sans-serif
+            font-weight: normal
+            font-size: 0,875rem
+            line-height: 17px
+            color: $secondary-color
+
+            &::after
+                content: ''
+                background-image: url('../assets/images/more-arrow.svg')
+                background-repeat: no-repeat
+                width: 6px
+                height: 10px
+                display: inline-block
+                margin-left: 0.3em
+        &-img
+            text-align: center
+            width: 50%

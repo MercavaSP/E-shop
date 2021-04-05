@@ -58,7 +58,6 @@ img {
 a {
   text-decoration: none;
   color: #2F3035;
-  display: inline-block;
 }
 
 ul, li {
@@ -90,7 +89,7 @@ h3 {
 }
 
 .page-section {
-  margin-top: 80px;
+  margin-top: 4em;
 }
 
 .btn-search {
@@ -105,6 +104,21 @@ h3 {
   background-color: #1C62CD;
   border-radius: 3px;
   border: none;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+}
+
+.card:hover {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+          box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  border: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .navbar__top-inner {
@@ -506,4 +520,70 @@ h3 {
 
 .search__content-input::placeholder {
   color: #656464;
+}
+
+.categories__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories__item {
+  width: 370px;
+  max-height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.categories__item:hover {
+  color: #1C62CD;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.categories__item-info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.categories__item-text {
+  font-family: "SFPro Regular",sans-serif;
+  font-weight: normal;
+  font-size: 0,875rem;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.categories__item-text::after {
+  content: '';
+  background-image: url("../assets/images/more-arrow.svg");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 0.3em;
+}
+
+.categories__item-img {
+  text-align: center;
+  width: 50%;
 }
