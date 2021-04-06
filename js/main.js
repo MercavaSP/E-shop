@@ -23,5 +23,10 @@ $(function(){
     
     });
 
+
+
+    $('.products__item-favorit').on('click',function(){
+        $('.products__item-favorit').toggleClass('products__item-favorit--active');
+    });
 });
 
