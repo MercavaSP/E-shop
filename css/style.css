@@ -522,6 +522,17 @@ h3 {
   color: #656464;
 }
 
+.tab--active {
+  border-radius: 5px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  background-color: #F0F0F4;
+  font-weight: 700;
+}
+
+.tabs-content--active {
+  display: block;
+}
+
 .categories__inner {
   display: -webkit-box;
   display: -ms-flexbox;

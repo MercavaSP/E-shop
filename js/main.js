@@ -8,18 +8,18 @@ $(function(){
     });
 
 // Настраиваем Табсы
-    $('.search__tabs-item').on('click', function(e){
+    $('.tab').on('click', function(e){
         
         // Убираем активность ссылок 
         e.preventDefault();
         
         // Убираем класс активности с ссылок
-        $('.search__tabs-item').removeClass('search__tabs-item--active');
-        $('.search__content-item').removeClass('search__content-item--active');
+        $('.tab').removeClass('tab--active');
+        $('.tabs-content').removeClass('tabs-content--active');
         
         // Добавляем класс на ссылку по клику
-        $(this).addClass('search__tabs-item--active');
-        $($(this).attr('href')).addClass('search__content-item--active');
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tabs-content--active');
     
     });
 
