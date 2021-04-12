@@ -54,17 +54,17 @@
 							<ul class="info__panel-list">
 								<li class="info__panel-item panel-item-1">
 									<a class="item__link heart" href="#">
-										<img src="./assets/images/heart.svg" alt="">
+										<img src="./assets/images/heart.svg" alt="favorit icon">
 									</a>
 								</li>
 								<li class="info__panel-item panel-item-2">
 									<a class="item__link person" href="#">
-										<img src="./assets/images/person.svg" alt="">
+										<img src="./assets/images/person.svg" alt="person icon">
 									</a>
 								</li>
 								<li class="info__panel-item panel-item-3">
 									<a class="item__link cart" href="#">
-										<img src="./assets/images/cart.svg" alt="">
+										<img src="./assets/images/cart.svg" alt="cart icon">
 										<p class="cart__num cart__num-on ">1</p>
 									</a>
 								</li>
@@ -210,7 +210,7 @@
 							<p class="categories__item-text">Подробее</p>
 						</div>
 						<div class="categories__item-img">
-							<img src="/assets/images/items/quadrobike.png" alt="quadrobike">
+							<img src="/assets/images/items/quadrobike.png" alt="product imagequadrobike">
 						</div>
 					</a>
 					<a class="categories__item card" href="#">
@@ -219,7 +219,7 @@
 							<p class="categories__item-text">Подробее</p>
 						</div>
 						<div class="categories__item-img">
-							<img src="/assets/images/items/jetsky.png" alt="jetsky">
+							<img src="/assets/images/items/jetsky.png" alt="product imagejetsky">
 						</div>
 					</a>
 					<a class="categories__item card" href="#">
@@ -228,7 +228,7 @@
 							<p class="categories__item-text">Подробее</p>
 						</div>
 						<div class="categories__item-img">
-							<img src="/assets/images/items/boat.png" alt="boat">
+							<img src="/assets/images/items/boat.png" alt="product image boat">
 						</div>
 					</a>
 					<a class="categories__item card" href="#">
@@ -237,7 +237,7 @@
 							<p class="categories__item-text">Подробее</p>
 						</div>
 						<div class="categories__item-img">
-							<img src="/assets/images/items/snowbike.png" alt="snowbike">
+							<img src="/assets/images/items/snowbike.png" alt="product image snowbike">
 						</div>   
 					</a>
 					<a class="categories__item card" href="#">
@@ -246,7 +246,7 @@
 							<p class="categories__item-text">Подробее</p>
 						</div>
 						<div class="categories__item-img">
-							<img src="/assets/images/items/offroadbike.png" alt="offroadbike">
+							<img src="/assets/images/items/offroadbike.png" alt="product image offroadbike">
 						</div>
 					</a>
 					<a class="categories__item card" href="#">
@@ -255,7 +255,7 @@
 							<p class="categories__item-text">Подробее</p>
 						</div>
 						<div class="categories__item-img">
-							<img src="/assets/images/items/engine.png" alt="engine">
+							<img src="/assets/images/items/engine.png" alt="product image engine">
 						</div>
 					</a>
 				</div>
@@ -267,7 +267,7 @@
 		<section class="products">
 			<div class="container">
 				<div class="products__inner">
-					<div class="tabs__wrapper">
+					<div class="tabs__wrapper ">
 						<h3 class="tabs__wrapper-title">Популярные товары</h3>
 						<div class="tabs products__tabs">
 							<a class="tab tab--active products__tabs-tab" href="#">запчасти</a>
@@ -279,21 +279,25 @@
 						</div>
 						<div class="tabs-container">
 							<div class="tabs-content tabs-content--active products__content">
-								
 							</div>
 							<div class="tabs-content products__content">
 								<div class="products__slider">
 									<div class="products__slider-item">
-										
-										<div class="products__item-wrapper">
+										<div class="products__item-wrapper ">
 											<button class="products__item-favorit"></button>
 											<button class="products__item-cart">
-												<img src="/assets/images/cart-white.svg" alt="">
+												<img class="products__item-cart--img" src="/assets/images/cart-white.svg" alt="cart image">
 											</button>
-											<a class="products__item card" href="#">
-												<img class="products__item-img" src="/assets/images/items/backpack.png" alt="">
+											<a class="products__item-notify--link" href="#"><span>Сообщить о поступлении</span></a>
+											<a class="products__item products__item--sale card" href="#">
+												<p class="products__item-hover--text">
+													посмотреть товар
+												</p>
+												<img class="products__item-img" src="/assets/images/items/backpack.png" alt="product image backpack">
 												<h5 class="products__item-title">Водонепроницаемый Рюкзак</h5>
 												<p class="price products__item-price">9 800 ₽</p>
+												<p class="products__item-notify--text">нет в наличии</p>
+
 											</a>
 										</div>
 									</div>
@@ -309,7 +313,10 @@
 			</div>
 		</section>
 		<!-- ./products -->
-		
+		<section class="test page-section">
+
+
+		</section>
 	</main>
 
 	<footer>
