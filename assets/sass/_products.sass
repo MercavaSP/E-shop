@@ -1,5 +1,14 @@
 .products
     margin-top: 40px
+    &__tabs
+        margin-bottom: 25px
+    &__tab
+        padding-bottom: 10px
+    &__tab.tab--active
+        border-bottom: 2px solid $cta-color
+
+    &__tab + &__tab
+        margin-left: 50px
     &__item
         padding: 52px 20px 31px
         margin: 0 auto
@@ -22,6 +31,7 @@
                 color: #fff
                 letter-spacing: 0.1em
         &-wrapper
+            min-height: 403px
             text-align: center
             width: 270px
             position: relative
@@ -51,6 +61,7 @@
             &--active
                 &::before
                     background-image: url('../assets/images/cta-heart.svg')
+
         &-hover
             &--text
                 padding: 18px 21px
@@ -69,13 +80,15 @@
             position: absolute
             width: 60px
             height: 40px
-            background-color: $cta-color
+            background: $cta-color
             bottom: 0
             right: 0
             border-radius: 10px 0 3px 0
             border: none
             padding-top: 6px
+            z-index: 10
             &--img
+
         &-notify
             &--text
                 font-family: "SFPro Bold", sans-serif
@@ -85,10 +98,34 @@
                 display: none
             &--link
                 display: none
+    &__slider
+
+        &__btn
+            &-prev
+                left: -35px
+            &-next
+                right: -15px
+    &__more
+        text-align: center
+        margin-top: 25px
+        &--link
+            display: block
+            background: #F0F0F4
+            font-size: 0.9375rem
+            text-align: center
+            letter-spacing: 0.12em
+            padding: 1.2em 2.2em
+            line-height: 18px
+            display: inline-block
 
 .tabs__wrapper
     &-title
         margin-bottom: 25px
+.tab--active
+    border-radius: none
+    background-color: none
+    font-family: "SFProDisplay-Bold", sans-serif
+    font-weight: normal
 
 // Поведение елементов при добавлении позиции out of stock
 

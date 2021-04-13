@@ -25,8 +25,18 @@ $(function(){
 
 
 
+
     $('.products__item-favorit').on('click',function(){
-        $('.products__item-favorit').toggleClass('products__item-favorit--active');
+        $(this).toggleClass('products__item-favorit--active');
     });
+// Настраиваем слайдер в продуктах
+   
+    $('.products__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<button class="products__slider__btn products__slider__btn-prev"><img src="assets/images/left_arrow-black.svg" alt="left arrow black"></button>',
+        nextArrow: '<button class="products__slider__btn products__slider__btn-next"><img src="assets/images/right_arrow-black.svg" alt="right arrow black"></button>'
+    });
+
 });
 
